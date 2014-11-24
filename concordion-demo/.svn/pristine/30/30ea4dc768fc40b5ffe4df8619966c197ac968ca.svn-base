@@ -1,0 +1,8 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+    <body>
+        <p>Avant d'installer referentiel-activites il faut que :</p>
+        <p>Le wsdl de compagnon proxy soit <span concordion:assertEquals="testAppelCompagnon()">disponible</span></p>
+        <p>Le wsdl de structures soit <span concordion:assertEquals="testAppelStructures()">disponible</span></p>
+        <p>Le wsdl de mots-cles soit <span concordion:assertEquals="testAppelMotsCles()">disponible</span></p>
+    </body>
+</html>
