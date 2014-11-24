@@ -21,12 +21,22 @@ public class MyClassTest {
 		
 		myClass = new MyClass();
 		
-		foo = Mockito.mock(Foo.class);
-		InjectionHelper.setField(myClass, "myFoo", foo);
+		
+	}
+		
+	@Test
+	public void printMyFooNameMustFail() throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException{
+		
+		final String valueMock = "MyMockedResult";
+
+		Assert.assertEquals(valueMock, myClass.printMyFooName());
 	}
 	
 	@Test
-	public void printMyFooNameMustReturnMyMockedResult(){
+	public void printMyFooNameMustReturnMyMockedResult() throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException{
+		
+		foo = Mockito.mock(Foo.class);
+		InjectionHelper.setField(myClass, "myFoo", foo);
 		
 		final String valueMock = "MyMockedResult";
 		
