@@ -8,3 +8,5 @@ OKD : Origin community Distribution of Kubernetes
 * Un « Replication Controller » est un composant technique en charge de la résilience des POD
 * Une « Route » expose un point d’entrée (DNS hostname ou VIP) à l’extérieur d’une application
 
+See > https://docs.okd.io/latest/minishift/getting-started/quickstart.html
+
