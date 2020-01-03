@@ -1,4 +1,4 @@
-creds/*
+**/creds/*
 .terraform/*
 .idea/*
 *.swp
